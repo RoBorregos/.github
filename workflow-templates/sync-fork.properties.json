@@ -1,0 +1,5 @@
+{
+    "name": "Sync Forked Repo",
+    "description": "Sync a fork with the original repo.",
+    "iconName": "octicon link"
+}
