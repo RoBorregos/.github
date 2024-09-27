@@ -1,5 +1,5 @@
 {
     "name": "Node.js build",
-    "description": "Node.js build on Node 18 and 20.",
+    "description": "Node.js build on Node 18 and 20 and 22.",
     "iconName": "octicon tools"
 }
