@@ -30,6 +30,7 @@ jobs:
 
   check-and-fork:
     runs-on: ubuntu-latest
+    if: ${{ github.repository_owner != env.PERSONAL_ACCOUNT}}
     needs: build
     steps:
       - name: Checkout code
