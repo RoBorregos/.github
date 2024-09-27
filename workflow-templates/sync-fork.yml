@@ -12,10 +12,10 @@ env:  # Define environment variables at the workflow level
 jobs:
   sync:
     runs-on: ubuntu-latest
-    # Avoid re-running job on account that hosts repositories
-    if: ${{ github.repository_owner != env.PERSONAL_ACCOUNT}}
     steps:
       - name: Update Fork
+        # Avoid re-running job on account that hosts repositories
+        if: ${{ github.repository_owner != env.PERSONAL_ACCOUNT}}
         run: |
           # Assume repo has the same name in account
           REPO_NAME=${GITHUB_REPOSITORY##*/}
