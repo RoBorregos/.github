@@ -30,6 +30,7 @@ jobs:
 
   check-and-fork:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
