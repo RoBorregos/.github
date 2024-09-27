@@ -1,8 +1,10 @@
 name: Sync Forked Repo
 
 on:
-  push:
-    branches: [ $default-branch ]
+   workflow_run:
+    workflows: ["Node.js build"]
+    types:
+      - success
 
 env:  # Define environment variables at the workflow level
   PERSONAL_ACCOUNT: roborregosteam
